@@ -1,10 +1,18 @@
 package Inheritance;
 
+import oop.Phone;
+import oop.SmartPhone;
+
 public class Doctor extends Human {
 	
+	private SmartPhone phone = new SmartPhone("iPhone 9", false, false);
+		
+	public SmartPhone getPhone() {
+		return this.phone;
+	}
+
 	public Doctor(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void giveSuggestion() {

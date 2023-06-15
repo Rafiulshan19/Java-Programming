@@ -29,6 +29,10 @@ public class Inhaeritancetest {
 		System.out.println(str3);
 		System.out.println("--------------");
 		
+		t.getPhone().settings();
+		doc.getPhone().takePicture();
+		s.getPhone().call(54615205);
+		
 		
 	}
 
