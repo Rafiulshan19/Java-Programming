@@ -12,10 +12,10 @@ public class Phone {
 	private String[] Contacts = {"afra", "naila", "lima"};
 	private ArrayList<String> contacts = new ArrayList<>();
 	
-	private boolean isGPSEnabled = false;
-	private boolean isFaceDetectionEnabled  = false;
-	private boolean isBluetoothEnabled = false;
-	private boolean isPaymentCapable = false;
+//	private boolean isGPSEnabled = false;
+//	private boolean isFaceDetectionEnabled  = false;
+//	private boolean isBluetoothEnabled = false;
+//	private boolean isPaymentCapable = false;
 	
 	String name = "Rina";
 	
@@ -25,13 +25,13 @@ public class Phone {
 //		
 //	}
 	
-	public Phone(String modelName , boolean isGPSEnabled, boolean isFaceDetectionEnabled, boolean isBluetoothEnabled, boolean isPaymentCapable) {
-//	public Phone(String modelName ) {	
+//	public Phone(String modelName , boolean isGPSEnabled, boolean isFaceDetectionEnabled, boolean isBluetoothEnabled, boolean isPaymentCapable) {
+	public Phone(String modelName ) {	
 		this.modelName = modelName;
-		this.isGPSEnabled = isGPSEnabled;
-		this.isBluetoothEnabled = isBluetoothEnabled;
-		this.isFaceDetectionEnabled = isFaceDetectionEnabled;
-		this.isPaymentCapable = isPaymentCapable;
+//		this.isGPSEnabled = isGPSEnabled;
+//		this.isBluetoothEnabled = isBluetoothEnabled;
+//		this.isFaceDetectionEnabled = isFaceDetectionEnabled;
+//		this.isPaymentCapable = isPaymentCapable;
 	}
 	
 	// -------------------------Methods-------------------------------------------------
@@ -43,24 +43,24 @@ public class Phone {
 		System.out.println("Phone");
 		System.out.println("Sound");
 		
-		if(isGPSEnabled == true) {
-			System.out.println("GPS");
-		}
-		
-		if(isFaceDetectionEnabled == true) {
-			System.out.println("Face Detected");
-		}
+//		if(isGPSEnabled == true) {
+//			System.out.println("GPS");
+//		}
+//		
+//		if(isFaceDetectionEnabled == true) {
+//			System.out.println("Face Detected");
+//		}
 		System.out.println("Privacy");
 		System.out.println("Message");
-		System.out.println("Photos");
+		System.out.println("Theme");
 		
-		if(isBluetoothEnabled == true) {
-			System.out.println("Bluetooth");
-		}
-		
-		if(isPaymentCapable == true) {
-			System.out.println("Payment");
-		}
+//		if(isBluetoothEnabled == true) {
+//			System.out.println("Bluetooth");
+//		}
+//		
+//		if(isPaymentCapable == true) {
+//			System.out.println("Payment");
+//		}
 
 	}
 	public void addContacts(String names) {
@@ -69,16 +69,23 @@ public class Phone {
 	public void deleteContacts(String names) {
 		contacts.remove(names);
 	}
-	public void newContacts() {
-		for(int i = 0; i < contacts.size(); i++) {
-			System.out.println("Hi there. " + contacts.get(i));
-		}
-	}
 	public void showContacts() {
-		for(int i = 0; i < Contacts.length; i++) {
-			System.out.println("Hi there. " + Contacts[i]);
+		if(contacts.size() < 1) {
+			System.out.println("Phone Contact is empty.");
 		}
+		else
+		{
+			for(int i = 0; i < contacts.size(); i++) {
+				System.out.println(i + contacts.get(i));
+			}
+		}
+		
 	}
+//	public void showContacts() {
+//		for(int i = 0; i < Contacts.length; i++) {
+//			System.out.println("Hi there. " + Contacts[i]);
+//		}
+//	}
 	public void groupSMS(String sms, int[] numbers) {
 		for(int i=0; i < numbers.length; i++ ) {
 			System.out.println("hi there. " + sms + ". Sending sms to " + numbers[i]);
