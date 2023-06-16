@@ -1,15 +1,20 @@
-package Inheritance;
+package Humans;
 
 import oop.SmartPhone;
 
 public class Singer extends Human{
 
-	private SmartPhone phone = new SmartPhone("Samsung Galaxy 20", true, true);
+	private SmartPhone phone = new SmartPhone("iphone X", false, true);
+//	private SmartPhone phone ;
 	
 	public SmartPhone getPhone() {
 		return this.phone;
 	}
-	
+//
+	public void setPhone(SmartPhone phone) {
+		this.phone = phone;
+	}
+//
 	public Singer(String name) {
 		super(name);
 	}

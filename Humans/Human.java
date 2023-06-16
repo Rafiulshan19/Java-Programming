@@ -1,10 +1,23 @@
-package Inheritance;
+package Humans;
+
+import oop.NonSmartPhone;
+import oop.SmartPhone;
 
 public class Human {
 
 	private String name;
+	private SmartPhone phone;
 	
-	
+	public SmartPhone getPhone() {
+		return phone;
+	}
+
+	public void setPhone(SmartPhone phone) {
+		this.phone = phone;
+	}
+//------------------------------
+
+//--------------------------------
 	public String getName() {
 		return name;
 	}

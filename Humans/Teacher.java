@@ -1,11 +1,11 @@
-package Inheritance;
+package Humans;
 
 import oop.NonSmartPhone;
 import oop.SmartPhone;
 
 public class Teacher extends Human {
 
-private NonSmartPhone phone = new NonSmartPhone("Nokia 1200");
+	private NonSmartPhone phone = new NonSmartPhone("Nokia 1200");
 	
 	public NonSmartPhone getPhone() {
 		return this.phone;
@@ -20,3 +20,4 @@ private NonSmartPhone phone = new NonSmartPhone("Nokia 1200");
 		System.out.println("Do not tell a lie to anyone.");
 	}
 }
+

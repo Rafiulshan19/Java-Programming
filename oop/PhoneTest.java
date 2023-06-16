@@ -33,23 +33,41 @@ public class PhoneTest {
 //----------Constructor---------------
 //		p.settings();
 		
-		System.out.println("-----------iPhone---------");
-		Phone myIPhone = new Phone("iPhone X", true, false, true, true);
-		myIPhone.settings();
-		System.out.println("----------Samsung----------");
-		Phone mySmasung = new Phone("Galaxy Y18", true, true, true, true);
-		mySmasung.settings();
-		System.out.println("-----------Nokia---------");
-		Phone myNokia = new Phone("3360", false, false, false, false);
-		myNokia.settings();
-		
-		System.out.println("---------------------------------------");
-	
+//		System.out.println("-----------iPhone---------");
+//		Phone myIPhone = new Phone("iPhone X", true, false, true, true);
+//		myIPhone.settings();
+//		System.out.println("----------Samsung----------");
+//		Phone mySmasung = new Phone("Galaxy Y18", true, true, true, true);
+//		mySmasung.settings();
+//		System.out.println("-----------Nokia---------");
+//		Phone myNokia = new Phone("3360", false, false, false, false);
+//		myNokia.settings();
+//		
+//		System.out.println("---------------------------------------");
 
+//----------------------Inheritance--------------------------	
+		SmartPhone myIPhone = new SmartPhone("XI" , false, true);
+		SmartPhone mySmasung = new SmartPhone("Ace 13", true, true);
+		NonSmartPhone myNokia = new NonSmartPhone("3360");
 		
+		myIPhone.settings();
+		System.out.println("-------------");
+		mySmasung.settings();
+		System.out.println("-------------");
+		myNokia.settings();
+		System.out.println("-------------");
 		
+		myIPhone.takePicture();
+		mySmasung.takePicture();
+		System.out.println("-------------");
 		
+		myNokia.showContacts();
+		myNokia.addContacts("Rima");
+		myNokia.addContacts("Rony");
+		myNokia.addContacts("Rakib");
+		myNokia.showContacts();
 		
+	
 	}
 
 }

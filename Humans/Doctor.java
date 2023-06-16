@@ -1,4 +1,4 @@
-package Inheritance;
+package Humans;
 
 import oop.Phone;
 import oop.SmartPhone;

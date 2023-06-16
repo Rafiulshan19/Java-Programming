@@ -1,4 +1,4 @@
-package Inheritance;
+package Humans;
 
 public class Inhaeritancetest {
 
