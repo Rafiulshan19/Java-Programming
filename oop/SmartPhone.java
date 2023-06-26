@@ -15,6 +15,9 @@ public class SmartPhone extends Phone {
 	public SmartPhone(String modelName, boolean isFaceDetectionEnabled, boolean isPaymentCapable) {
 		super(modelName);
 		
+		this.isFaceDetectionEnabled = isFaceDetectionEnabled;
+		this.isPaymentCapable = isPaymentCapable;
+		
 	}
 
 	//Methods

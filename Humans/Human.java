@@ -9,6 +9,12 @@ public class Human {
 	private SmartPhone phone;
 	
 	public SmartPhone getPhone() {
+		
+		if(this.phone == null) {
+			System.out.println("Ooops; I don't own any phone.");
+			System.exit(1);
+		}
+		
 		return phone;
 	}
 

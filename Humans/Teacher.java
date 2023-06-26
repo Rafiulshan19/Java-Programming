@@ -1,7 +1,7 @@
 package Humans;
 
 import oop.NonSmartPhone;
-import oop.SmartPhone;
+//import oop.SmartPhone;
 
 public class Teacher extends Human {
 
